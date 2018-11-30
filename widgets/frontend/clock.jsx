@@ -5,9 +5,11 @@ class Clock extends React.Component {
     super(props);
     
     this.state = {time: new Date() };
+    this.tick = this.tick.bind(this);
   }
   
   tick() {
+    // debugger
     this.setState({time: new Date()});
   }
   
@@ -16,7 +18,13 @@ class Clock extends React.Component {
   }
   
   render () {
-    return <h1>Clock</h1>; 
+    // debugger
+    return (
+      <div>
+        <h1>Clock</h1>
+        <h1>{this.state.time.toLocaleTimeString()}</h1>
+      </div>
+    );
   }
 }
 
