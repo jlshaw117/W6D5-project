@@ -7,8 +7,15 @@ document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(<h1>You done goofed A A ron</h1>, root);
   
   ReactDOM.render(
-    <Clock />,
+    <Root />,
     root
-  );
+  ); 
 });
 
+function Root () {
+  return (
+    <div>
+      <Clock />
+    </div>
+  );
+}
