@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Clock from './clock';
 
-class Widget extends React.Component {
-  
-}
+
 
 document.addEventListener('DOMContentLoaded', () => {
-  const root = document.getElementsByClassName('root');
-  ReactDOM.render(<h1>call fo duty is overrated</h1>, root);
+  const root = document.getElementById('root');
+  ReactDOM.render(<h1>call of duty is overrated</h1>, root);
+  
+  ReactDOM.render(
+    <Clock />,
+    root
+  );
 });
 
-export default Widget;
