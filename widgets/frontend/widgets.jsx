@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function Root () {
   return (
-    <div>
-      <Clock />
+    <div className="root">
+      <Clock/>
     </div>
   );
 }
