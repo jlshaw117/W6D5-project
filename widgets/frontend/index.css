@@ -1,0 +1,26 @@
+.root {
+  display: flex;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 500%;
+  font-weight: 400;
+}
+
+.Clock-Container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid #31bcb8;
+  height: 250px;
+  width: 1080px;
+}
+
+.date, .Time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+body {
+  background-image: url(https://verdict4u.files.wordpress.com/2016/09/google-now-wallpaper-2.png);
+}
